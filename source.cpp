@@ -68,23 +68,28 @@ int main()
     cout<<"Select the option from above: \n";
     switch(num)
       {
-        case 1:"1. Open Account.   \n";
-        system("CLS");
+        case 1:
+        system("clear");
+        cout<<"1. Open Account.   \n";
         obj.Open_account();
         break;
-        case 2:"2. Deposite Money. \n";
-        system("CLS");
+        case 2:
+        system("clear");
+        cout<<"2. Deposite Money. \n";
         obj.Deposite_money();
         break;
-        case 3:"3. Withdraw Money. \n";
-        system("CLS");
+        case 3:
+        system("clear");
+        cout<<"3. Withdraw Money. \n";
         obj.Withdraw_money();
         break;
-        case 4:"4. Display Account. \n";
-        system("CLS");
+        case 4:
+        system("clear");
+        cout<<"4. Display Account. \n";
         obj.Display_account();
         break;
         case 5:
+        system("clear");
           if(num==5)
             exit(1);
         default:
