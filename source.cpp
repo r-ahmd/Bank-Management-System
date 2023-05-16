@@ -69,40 +69,33 @@ int main()
     switch(num)
       {
         case 1:
-        system("clear");
-        cout<<"1. Open Account.   \n";
-        obj.Open_account();
-        break;
+          system("clear");
+          cout<<"1. Open Account.   \n";
+          obj.Open_account();
+          break;
         case 2:
-        system("clear");
-        cout<<"2. Deposite Money. \n";
-        obj.Deposite_money();
-        break;
+          system("clear");
+          cout<<"2. Deposite Money. \n";
+          obj.Deposite_money();
+          break;
         case 3:
-        system("clear");
-        cout<<"3. Withdraw Money. \n";
-        obj.Withdraw_money();
-        break;
+          system("clear");
+          cout<<"3. Withdraw Money. \n";
+          obj.Withdraw_money();
+          break;
         case 4:
-        system("clear");
-        cout<<"4. Display Account. \n";
-        obj.Display_account();
-        break;
-        case 5:
-        system("clear");
-          if(num==5)
-            exit(1);
+          system("clear");
+          cout<<"4. Display Account. \n";
+          obj.Display_account();
+          break;
+        case 5: system("clear");
+          cout << "Exiting the system..." << endl;
+          exit(0);
         default:
           cout<<"Wrong option!!! try again \n";
       }
-        cout<<"\n Do you want to select next option then press(y) \n";
-        cout<<"If you want to exit then press(n) \n";
-        x = getch();
-        if(x=='n' || x=='N')
-          exit(0);
-  }while(x=='y' || x=='Y');
-
-  
-  getch();
+      cout << "\nDo you want to select the next option? Press 'y' to continue or 'n' to exit: ";
+      cin >> x;
+  } while (x == 'y' || x == 'Y');
   return 0;
 }
