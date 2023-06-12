@@ -50,7 +50,7 @@ class BankManage{
             for(int i=0; i<accounts.size(); i++){
                 cout<<"\tName: "<<accounts[i].getName()<<endl;
                 cout<<"\tAccount Number: "<<accounts[i].getAcc()<<endl;
-                cout<<"\tBalance: "<<accounts[i].getBal()<<endl;
+                cout<<"\tBalance: "<<accounts[i].getBal()<<endl<<endl;
             }
         }
         void Search_Acc(int acc){
