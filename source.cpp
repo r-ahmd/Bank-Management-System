@@ -97,7 +97,8 @@ int main()
                 int acc_num;
                 double balance;
                 cout<<"\t\tEnter Name: ";
-                cin>>name;
+                cin.ignore();
+                getline(cin,name);
                 cout<<"\t\tEnter Account Number: ";
                 cin>>acc_num;
                 cout<<"\t\tEnter Initial Balance: ";
